@@ -1,0 +1,76 @@
+{
+	"classes": [
+		{
+			"classId": 0,
+			"name": "Assassin",
+			"taunt": 8,
+			"ability": "Backstab",
+			"usedAbility": false,
+			"placement": 0,
+			"fromSet": "Core"
+		},
+		{
+			"classId": 1,
+			"name": "Herald",
+			"taunt": 4,
+			"ability": "Perseverance",
+			"usedAbility": false,
+			"placement": 0,
+			"fromSet": "Core"
+		},
+		{
+			"classId": 2,
+			"name": "Knight",
+			"taunt": 10,
+			"ability": "Stand Fast",
+			"usedAbility": false,
+			"placement": 0,
+			"fromSet": "Core"
+		},
+		{
+			"classId": 3,
+			"name": "Sorcerer",
+			"taunt": 5,
+			"ability": "Spell Fury",
+			"usedAbility": false,
+			"placement": 0,
+			"fromSet": "Core"
+		},
+		{
+			"classId": 4,
+			"name": "Pyromancer",
+			"taunt": 6,
+			"ability": "Explosive Crit",
+			"usedAbility": false,
+			"placement": 0,
+			"fromSet": "Forgotten Paths"
+		},
+		{
+			"classId": 5,
+			"name": "Thief",
+			"taunt": 2,
+			"ability": "Lucky Break",
+			"usedAbility": false,
+			"placement": 0,
+			"fromSet": "Forgotten Paths"
+		},
+		{
+			"classId": 6,
+			"name": "Cleric",
+			"taunt": 3,
+			"ability": "Keep the Faith",
+			"usedAbility": false,
+			"placement": 0,
+			"fromSet": "Seekers of Humanity"
+		},
+		{
+			"classId": 7,
+			"name": "Warrior",
+			"taunt": 9,
+			"ability": "Berserk Charge",
+			"usedAbility": false,
+			"placement": 0,
+			"fromSet": "Seekers of Humanity"
+		}
+	]
+}
