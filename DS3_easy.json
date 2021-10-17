@@ -1,0 +1,20 @@
+{
+	"path0":{"from":"bonfire","to":"area 1a"},
+	"path1":{"from":"bonfire","to":"area 1b"},
+	"path2":{"from":"bonfire","to":"area 2b"},
+	"path3":{"from":"bonfire","to":"area 3a"},
+	"path4":{"from":"area 1a","to":"bonfire"},
+	"path5":{"from":"area 1a","to":"boss 1"},
+	"path6":{"from":"area 1b","to":"bonfire"},
+	"path7":{"from":"area 1b","to":"area 2a"},
+	"path8":{"from":"area 2a","to":"area 1b"},
+	"path9":{"from":"area 2a","to":"boss 1"},
+	"path10":{"from":"area 2b","to":"bonfire"},
+	"path11":{"from":"area 2b","to":"boss 2"},
+	"path12":{"from":"area 3a","to":"bonfire"},
+	"path13":{"from":"area 3a","to":"boss 2"},
+	"path14":{"from":"boss 1","to":"area 1a"},
+	"path15":{"from":"boss 1","to":"area 2a"},
+	"path16":{"from":"boss 2","to":"area 2b"},
+	"path17":{"from":"boss 2","to":"area 3a"}
+}

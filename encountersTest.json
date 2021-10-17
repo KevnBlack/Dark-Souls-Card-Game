@@ -1,0 +1,17 @@
+{
+	"encounters": [
+		{
+			"encounterId": 0,
+			"name": "Empty Crypt",
+			"level": 3,
+			"traps": 0,
+			"terrain": null,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [3,0,0]},
+				{"players": 2, "rewards": 3, "enemies": [3,0,1]},
+				{"players": 3, "rewards": 3, "enemies": [0,2,1]},
+				{"players": 4, "rewards": 3, "enemies": [0,1,2]}]
+		}
+	]
+}

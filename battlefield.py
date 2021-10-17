@@ -58,7 +58,7 @@ class Battlefield:
                         occupiedPlayerZones = self.getOccupiedPlayerZones()
                         if len(set.intersection(set(enemy.attacks),set(occupiedPlayerZones))) == 0: # If the enemy attack zones aim at no players
                             print(f'{enemy} missed completely!')
-                            break # If any, move on to next enemy
+                            break # Missed, so move on to next enemy if any
                         elif self.friendlyField[attackZone] is None: # Skip empty zones
                             continue
                         else:
