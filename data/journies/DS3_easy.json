@@ -1,0 +1,20 @@
+{
+	"path0":{"from":"Bonfire","to":"Area 1A"},
+	"path1":{"from":"Bonfire","to":"Area 1B"},
+	"path2":{"from":"Bonfire","to":"Area 2B"},
+	"path3":{"from":"Bonfire","to":"Area 3A"},
+	"path4":{"from":"Area 1A","to":"Bonfire"},
+	"path5":{"from":"Area 1A","to":"Vordt of the Boreal Valley"},
+	"path6":{"from":"Area 1B","to":"Bonfire"},
+	"path7":{"from":"Area 1B","to":"Area 2A"},
+	"path8":{"from":"Area 2A","to":"Area 1B"},
+	"path9":{"from":"Area 2A","to":"Vordt of the Boreal Valley"},
+	"path10":{"from":"Area 2B","to":"Bonfire"},
+	"path11":{"from":"Area 2B","to":"Pontiff Sulyvahn"},
+	"path12":{"from":"Area 3A","to":"Bonfire"},
+	"path13":{"from":"Area 3A","to":"Pontiff Sulyvahn"},
+	"path14":{"from":"Vordt of the Boreal Valley","to":"Area 1A"},
+	"path15":{"from":"Vordt of the Boreal Valley","to":"Area 2A"},
+	"path16":{"from":"Pontiff Sulyvahn","to":"Area 2B"},
+	"path17":{"from":"Pontiff Sulyvahn","to":"Area 3A"}
+}

@@ -1,0 +1,693 @@
+{
+	"encounters": [
+		{
+			"encounterId": 0,
+			"name": "Ashen Wake",
+			"level": 1,
+			"traps": 3,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [1,1,0]},
+				{"players": 3, "rewards": 1, "enemies": [2,1,0]},
+				{"players": 4, "rewards": 1, "enemies": [0,2,0]}]
+		},
+		{
+			"encounterId": 1,
+			"name": "Hidden Passageway",
+			"level": 1,
+			"traps": 3,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [1,1,0]},
+				{"players": 3, "rewards": 1, "enemies": [2,1,0]},
+				{"players": 4, "rewards": 1, "enemies": [1,2,0]}]
+		},
+		{
+			"encounterId": 2,
+			"name": "Ruined Passageway",
+			"level": 1,
+			"traps": 2,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [1,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [0,1,0]},
+				{"players": 3, "rewards": 1, "enemies": [2,1,0]},
+				{"players": 4, "rewards": 1, "enemies": [3,1,0]}]
+		},
+		{
+			"encounterId": 3,
+			"name": "Weathered Peak",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 2, "enemies": [0,2,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,0,1]},
+				{"players": 4, "rewards": 2, "enemies": [0,2,1]}]
+		},
+		{
+			"encounterId": 4,
+			"name": "Burned Gardens",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 2, "enemies": [0,2,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [4,0,1]}]
+		},
+		{
+			"encounterId": 5,
+			"name": "Hollow Cell",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 2, "enemies": [4,0,0]},
+				{"players": 3, "rewards": 2, "enemies": [4,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [4,2,0]}]
+		},
+		{
+			"encounterId": 6,
+			"name": "Perished Depths",
+			"level": 3,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [1,1,0]},
+				{"players": 2, "rewards": 3, "enemies": [1,2,0]},
+				{"players": 3, "rewards": 3, "enemies": [1,3,0]},
+				{"players": 4, "rewards": 3, "enemies": [1,2,1]}]
+		},
+		{
+			"encounterId": 7,
+			"name": "Pit of the Dead",
+			"level": 3,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [3,0,0]},
+				{"players": 2, "rewards": 3, "enemies": [1,0,1]},
+				{"players": 3, "rewards": 3, "enemies": [0,0,2]},
+				{"players": 4, "rewards": 3, "enemies": [2,0,2]}]
+		},
+		{
+			"encounterId": 8,
+			"name": "Empty Crypt",
+			"level": 3,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [3,0,0]},
+				{"players": 2, "rewards": 3, "enemies": [3,0,1]},
+				{"players": 3, "rewards": 3, "enemies": [0,2,1]},
+				{"players": 4, "rewards": 3, "enemies": [0,1,2]}]
+		},
+		{
+			"encounterId": 9,
+			"name": "Hollow Cave",
+			"level": 1,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [1,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 3, "rewards": 2, "enemies": [3,0,0]},
+				{"players": 4, "rewards": 2, "enemies": [4,0,0]}]
+		},
+		{
+			"encounterId": 10,
+			"name": "Dark Hollow",
+			"level": 1,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [1,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 3, "rewards": 2, "enemies": [1,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [0,2,0]}]
+		},
+		{
+			"encounterId": 11,
+			"name": "Lightless Passage",
+			"level": 1,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [1,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [1,2,0]}]
+		},
+		{
+			"encounterId": 12,
+			"name": "Ash Gardens",
+			"level": 1,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [1,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [1,2,0]}]
+		},
+		{
+			"encounterId": 13,
+			"name": "The Deeps",
+			"level": 1,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [3,0,0]},
+				{"players": 3, "rewards": 2, "enemies": [4,0,0]},
+				{"players": 4, "rewards": 2, "enemies": [3,1,0]}]
+		},
+		{
+			"encounterId": 14,
+			"name": "Ashen Hollow",
+			"level": 1,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [1,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [3,0,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [5,0,0]}]
+		},
+		{
+			"encounterId": 15,
+			"name": "Ghostly Keep",
+			"level": 1,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [1,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 3, "rewards": 2, "enemies": [1,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [2,1,0]}]
+		},
+		{
+			"encounterId": 16,
+			"name": "The Forgotten",
+			"level": 1,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [4,0,0]}]
+		},
+		{
+			"encounterId": 17,
+			"name": "Road of Sacrifices",
+			"level": 1,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [1,2,0]}]
+		},
+{
+			"encounterId": 18,
+			"name": "Shattered Dungeon",
+			"level": 1,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [1,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [0,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [1,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [2,1,0]}]
+		},
+		{
+			"encounterId": 19,
+			"name": "Stormwind Gorge",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 2, "enemies": [0,2,0]},
+				{"players": 3, "rewards": 2, "enemies": [1,0,1]},
+				{"players": 4, "rewards": 2, "enemies": [1,1,1]}]
+		},
+		{
+			"encounterId": 20,
+			"name": "Prison Tower",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 1, "enemies": [2,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [2,3,0]}]
+		},
+{
+			"encounterId": 21,
+			"name": "Undead Cell",
+			"level": 1,
+			"traps": 2,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [1,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 3, "rewards": 2, "enemies": [3,0,0]},
+				{"players": 4, "rewards": 2, "enemies": [3,1,0]}]
+		},
+{
+			"encounterId": 22,
+			"name": "Forgotten Gorge",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 2, "enemies": [0,2,0]},
+				{"players": 3, "rewards": 2, "enemies": [0,3,0]},
+				{"players": 4, "rewards": 2, "enemies": [0,4,0]}]
+		},
+		{
+			"encounterId": 23,
+			"name": "First Awakening",
+			"level": 1,
+			"traps": 2,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [1,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 3, "rewards": 1, "enemies": [1,1,0]},
+				{"players": 4, "rewards": 1, "enemies": [0,2,0]}]
+		},
+{
+			"encounterId": 24,
+			"name": "Black Dungeon",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 2, "enemies": [3,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [0,1,1]},
+				{"players": 4, "rewards": 2, "enemies": [3,1,1]}]
+		},
+{
+			"encounterId": 25,
+			"name": "Hollow Cage",
+			"level": 1,
+			"traps": 0,
+			"terrain": true,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [1,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [3,0,0]},
+				{"players": 3, "rewards": 2, "enemies": [4,0,0]},
+				{"players": 4, "rewards": 2, "enemies": [2,2,0]}]
+		},
+{
+			"encounterId": 26,
+			"name": "Sunrise Pass",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 2, "enemies": [2,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [1,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [3,2,0]}]
+		},
+{
+			"encounterId": 27,
+			"name": "Temple of the Deeps",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 2, "enemies": [2,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [6,0,0]},
+				{"players": 4, "rewards": 2, "enemies": [2,3,0]}]
+		},
+{
+			"encounterId": 28,
+			"name": "Haunted Wood",
+			"level": 1,
+			"traps": 0,
+			"terrain": true,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [1,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [2,0,0]},
+				{"players": 3, "rewards": 1, "enemies": [1,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [2,2,0]}]
+		},
+{
+			"encounterId": 29,
+			"name": "High Wall of Lothric",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 2, "enemies": [0,2,0]},
+				{"players": 3, "rewards": 2, "enemies": [3,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [3,3,0]}]
+		},
+{
+			"encounterId": 30,
+			"name": "Lost Labyrinth",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 2, "enemies": [1,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [1,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [3,0,1]}]
+		},
+{
+			"encounterId": 31,
+			"name": "Demon Ruins",
+			"level": 2,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 2, "enemies": [0,0,1]},
+				{"players": 3, "rewards": 2, "enemies": [2,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [0,4,0]}]
+		},
+{
+			"encounterId": 32,
+			"name": "Wild Glades",
+			"level": 1,
+			"traps": 0,
+			"terrain": true,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 1, "enemies": [1,0,0]},
+				{"players": 2, "rewards": 1, "enemies": [1,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [1,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [5,0,0]}]
+		},
+{
+			"encounterId": 33,
+			"name": "Murky Roots",
+			"level": 2,
+			"traps": 2,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 2, "enemies": [0,2,0]},
+				{"players": 3, "rewards": 2, "enemies": [1,0,1]},
+				{"players": 4, "rewards": 2, "enemies": [0,1,1]}]
+		},
+{
+			"encounterId": 34,
+			"name": "Withered Thicket",
+			"level": 2,
+			"traps": 3,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 2, "enemies": [1,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [1,1,1]}]
+		},
+{
+			"encounterId": 35,
+			"name": "Cemetery of Ash",
+			"level": 3,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [1,1,0]},
+				{"players": 2, "rewards": 3, "enemies": [2,0,1]},
+				{"players": 3, "rewards": 3, "enemies": [0,2,1]},
+				{"players": 4, "rewards": 3, "enemies": [1,1,2]}]
+		},
+{
+			"encounterId": 36,
+			"name": "Overgrown Caves",
+			"level": 2,
+			"traps": 0,
+			"terrain": true,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 2, "enemies": [0,0,1]},
+				{"players": 3, "rewards": 2, "enemies": [2,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [1,3,0]}]
+		},
+{
+			"encounterId": 37,
+			"name": "Blackened Copse",
+			"level": 2,
+			"traps": 2,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 2, "enemies": [0,2,0]},
+				{"players": 3, "rewards": 2, "enemies": [0,0,1]},
+				{"players": 4, "rewards": 2, "enemies": [4,0,1]}]
+		},
+{
+			"encounterId": 38,
+			"name": "Ruined Keep",
+			"level": 3,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [1,1,0]},
+				{"players": 2, "rewards": 3, "enemies": [0,1,1]},
+				{"players": 3, "rewards": 3, "enemies": [3,1,1]},
+				{"players": 4, "rewards": 3, "enemies": [2,3,1]}]
+		},
+{
+			"encounterId": 39,
+			"name": "Basin's Entrance",
+			"level": 2,
+			"traps": 2,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 2, "enemies": [2,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [3,2,0]}]
+		},
+{
+			"encounterId": 40,
+			"name": "Misty Cliffs",
+			"level": 2,
+			"traps": 0,
+			"terrain": true,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 2, "enemies": [2,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [5,0,0]},
+				{"players": 4, "rewards": 2, "enemies": [1,3,0]}]
+		},
+{
+			"encounterId": 41,
+			"name": "Lost Shrine",
+			"level": 3,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [3,0,0]},
+				{"players": 2, "rewards": 3, "enemies": [4,1,0]},
+				{"players": 3, "rewards": 3, "enemies": [4,2,0]},
+				{"players": 4, "rewards": 3, "enemies": [4,1,1]}]
+		},
+{
+			"encounterId": 42,
+			"name": "Channeler's Balcony",
+			"level": 2,
+			"traps": 0,
+			"terrain": true,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 2, "enemies": [0,2,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [4,0,1]}]
+		},
+{
+			"encounterId": 43,
+			"name": "The Narrows",
+			"level": 2,
+			"traps": 2,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [2,0,0]},
+				{"players": 2, "rewards": 2, "enemies": [3,0,0]},
+				{"players": 3, "rewards": 2, "enemies": [3,1,0]},
+				{"players": 4, "rewards": 2, "enemies": [3,2,0]}]
+		},
+{
+			"encounterId": 44,
+			"name": "Fearful Wood",
+			"level": 3,
+			"traps": 2,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [1,1,0]},
+				{"players": 2, "rewards": 3, "enemies": [0,1,1]},
+				{"players": 3, "rewards": 3, "enemies": [1,2,1]},
+				{"players": 4, "rewards": 3, "enemies": [1,4,1]}]
+		},
+{
+			"encounterId": 45,
+			"name": "Undead Burg",
+			"level": 2,
+			"traps": 3,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 2, "enemies": [1,1,0]},
+				{"players": 3, "rewards": 2, "enemies": [1,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [2,2,0]}]
+		},
+{
+			"encounterId": 46,
+			"name": "Asylum Gates",
+			"level": 2,
+			"traps": 0,
+			"terrain": true,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 2, "enemies": [0,1,0]},
+				{"players": 2, "rewards": 2, "enemies": [0,2,0]},
+				{"players": 3, "rewards": 2, "enemies": [2,2,0]},
+				{"players": 4, "rewards": 2, "enemies": [3,1,0]}]
+		},
+{
+			"encounterId": 47,
+			"name": "Desolate Hinterland",
+			"level": 3,
+			"traps": 0,
+			"terrain": true,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [3,0,0]},
+				{"players": 2, "rewards": 3, "enemies": [3,1,0]},
+				{"players": 3, "rewards": 3, "enemies": [0,2,1]},
+				{"players": 4, "rewards": 3, "enemies": [0,1,2]}]
+		},
+{
+			"encounterId": 48,
+			"name": "Black Bog",
+			"level": 3,
+			"traps": 0,
+			"terrain": true,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [1,1,0]},
+				{"players": 2, "rewards": 3, "enemies": [1,2,0]},
+				{"players": 3, "rewards": 3, "enemies": [2,2,0]},
+				{"players": 4, "rewards": 3, "enemies": [2,1,1]}]
+		},
+{
+			"encounterId": 49,
+			"name": "Silent Tombs",
+			"level": 3,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [1,1,0]},
+				{"players": 2, "rewards": 3, "enemies": [0,3,0]},
+				{"players": 3, "rewards": 3, "enemies": [0,4,0]},
+				{"players": 4, "rewards": 3, "enemies": [0,5,0]}]
+		},
+{
+			"encounterId": 50,
+			"name": "Ruinous Forest",
+			"level": 3,
+			"traps": 2,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [1,1,0]},
+				{"players": 2, "rewards": 3, "enemies": [2,0,1]},
+				{"players": 3, "rewards": 3, "enemies": [1,1,1]},
+				{"players": 4, "rewards": 3, "enemies": [1,2,2]}]
+		},
+{
+			"encounterId": 51,
+			"name": "The King's Seal",
+			"level": 3,
+			"traps": 2,
+			"terrain": false,
+			"fromSet": "Forgotten Paths",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [0,0,1]},
+				{"players": 2, "rewards": 3, "enemies": [3,1,0]},
+				{"players": 3, "rewards": 3, "enemies": [2,2,0]},
+				{"players": 4, "rewards": 3, "enemies": [2,1,1]}]
+		},
+{
+			"encounterId": 52,
+			"name": "Broken Passageway",
+			"level": 3,
+			"traps": 0,
+			"terrain": false,
+			"fromSet": "Core",
+			"encounter": [
+				{"players": 1, "rewards": 3, "enemies": [3,0,0]},
+				{"players": 2, "rewards": 3, "enemies": [4,1,0]},
+				{"players": 3, "rewards": 3, "enemies": [0,2,1]},
+				{"players": 4, "rewards": 3, "enemies": [0,4,1]}]
+		}
+	]
+}

@@ -1,0 +1,45 @@
+{
+	"equipment": [
+		{
+			"equipmentId": 0,
+			"name": "Target Shield",
+			"cardType": "Assassin",
+			"weakness": null,
+			"fromSet": "Core",
+			"choices": [
+				{"option": "reuse", "ability": ["block"], "value": 2, "cost": ["Intelligence"]},
+				{"option": "discard", "ability": ["dodge"], "value": null, "cost": ["Intelligence"]}]
+		},
+		{
+			"equipmentId": 1,
+			"name": "Assassin Armour",
+			"cardType": "Assassin",
+			"weakness": null,
+			"fromSet": "Core",
+			"choices": [
+				{"option": "reuse", "ability": ["block"], "value": 2, "cost": ["Any"]},
+				{"option": "discard", "ability": ["dodge"], "value": null, "cost": ["Dexterity"]}]
+		},
+		{
+			"equipmentId": 2,
+			"name": "Kukris",
+			"cardType": "Assassin",
+			"weakness": "Skilled",
+			"fromSet": "Core",
+			"choices": [
+				{"option": "reuse", "ability": ["attack"], "value": 2, "cost": ["Dexterity", "Intelligence"]},
+				{"option": "discard", "ability": ["ranged", "bleed"], "value": null, "cost": null}]
+		},
+		{
+			"equipmentId": 3,
+			"name": "Estoc",
+			"cardType": "Assassin",
+			"weakness": "Precise",
+			"fromSet": "Core",
+			"choices": [
+				{"option": "reuse", "ability": ["attack"], "value": 2, "cost": ["Strength", "Any", "Dexterity"]},
+				{"option": "discard 1", "ability": ["attack"], "value": 2, "cost": ["Dexterity"]},
+				{"option": "discard 2", "ability": ["attack"], "value": 3, "cost": ["Strength", "Any", "Dexterity", "Any"]}]
+		}
+	]
+}

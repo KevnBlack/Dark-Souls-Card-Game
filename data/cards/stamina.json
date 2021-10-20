@@ -1,0 +1,104 @@
+{
+	"stamina": [
+		{
+			"staminaId": 0,
+			"name": "Dexterity",
+			"cost": 0,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Dexterity"]}]
+		},
+		{
+			"staminaId": 1,
+			"name": "Intelligence",
+			"cost": 0,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Intelligence"]}]
+		},
+		{
+			"staminaId": 2,
+			"name": "Faith",
+			"cost": 0,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Faith"]}]
+		},
+		{
+			"staminaId": 3,
+			"name": "Strength",
+			"cost": 0,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Strength"]}]
+		},
+		{
+			"staminaId": 4,
+			"name": "Intelligence or Faith",
+			"cost": 2,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Intelligence"]},
+				{"option": ["Faith"]}]
+		},
+		{
+			"staminaId": 5,
+			"name": "Strength or Dexterity",
+			"cost": 2,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Strength"]},
+				{"option": ["Dexterity"]}]
+		},
+		{
+			"staminaId": 6,
+			"name": "Strength or Faith",
+			"cost": 2,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Strength"]},
+				{"option": ["Faith"]}]
+		},
+		{
+			"staminaId": 7,
+			"name": "Dexterity or Intelligence",
+			"cost": 2,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Dexterity"]},
+				{"option": ["Intelligence"]}]
+		},
+		{
+			"staminaId": 8,
+			"name": "Intelligence and Faith",
+			"cost": 5,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Intelligence", "Faith"]}]
+		},
+		{
+			"staminaId": 9,
+			"name": "Strength and Dexterity",
+			"cost": 5,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Strength", "Dexterity"]}]
+		},
+		{
+			"staminaId": 10,
+			"name": "Strength and Faith",
+			"cost": 5,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Strength", "Faith"]}]
+		},
+		{
+			"staminaId": 11,
+			"name": "Dexterity and Intelligence",
+			"cost": 5,
+			"fromSet": "Core",
+			"choices": [
+				{"option": ["Dexterity", "Intelligence"]}]
+		}
+	]
+}

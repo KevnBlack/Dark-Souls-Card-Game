@@ -1,7 +1,10 @@
 import random
+from player import Player
+from enemyCards import EnemyCards
 
 class Battlefield:
     def __init__(self):
+        self.turn = 1
         self.battleState = True
         
         self.friendlyField = {1:None, 2:None, 3:None, 
@@ -9,30 +12,41 @@ class Battlefield:
 
         self.enemyField = {1:None, 2:None, 3:None, 
                            4:None, 5:None, 6:None}
-     
+    
+    def generateEnemies(self, area, resources, players, choice):
+        enemies = []
+        enemyCount = resources.encounterDatabase[str(area[choice])].encounter[len(players)-1]["enemies"]
+        for index,amount in enumerate(enemyCount): # Randomly select 3 enemies
+            if index == 0:
+                enemies.extend(random.sample(resources.level1Enemies,amount))
+            elif index == 1:
+                enemies.extend(random.sample(resources.level2Enemies,amount))
+            else:
+                enemies.extend(random.sample(resources.level3Enemies,amount))
+        return enemies
+    
     def placement(self, players, enemies):
-        self.friendlyZones = [1, 2, 3, 4, 5, 6]
+        self.openFriendlyZones = [1, 2, 3, 4, 5, 6]
         playerPlacement = random.randint(1,6) # Randomized for testing purposes, players will get to choose their placement
         for player in players:
             if self.friendlyField[playerPlacement] is None:
                 self.friendlyField[playerPlacement] = player
-                self.friendlyZones.remove(playerPlacement)
+                self.openFriendlyZones.remove(playerPlacement)
             else:
-                altPlacement = random.choice(self.friendlyZones)
+                altPlacement = random.choice(self.openFriendlyZones)
                 self.friendlyField[altPlacement] = player
-                self.friendlyZones.remove(altPlacement)
+                self.openFriendlyZones.remove(altPlacement)
         
-        self.enemyZones = [1, 2, 3, 4, 5, 6]
+        self.openEnemyZones = [1, 2, 3, 4, 5, 6]
         for enemy in enemies:
             if self.enemyField[enemy.placement] is None:
                 self.enemyField[enemy.placement] = enemy
-                self.enemyZones.remove(enemy.placement)
+                self.openEnemyZones.remove(enemy.placement)
             else:
-                altPlacement = random.choice(self.enemyZones)
+                altPlacement = random.choice(self.openEnemyZones)
                 self.enemyField[altPlacement] = enemy
-                self.enemyZones.remove(altPlacement)
-                
-            
+                self.openEnemyZones.remove(altPlacement)
+    
     def enemyAttack(self):
         for zone,enemy in self.enemyField.items(): # Enemy attack order
             frontMax, backMax = self.getMaxTaunts() # Get taunts at beginning of each enemy activation
@@ -63,16 +77,8 @@ class Battlefield:
                             continue
                         else:
                             print(f'{enemy} attacks {self.friendlyField[attackZone]}!') # Enemy lands hit
-        
-    def playerResponse(self):
-        # TODO: Function for responding to an enemy attack
-        pass
     
-    def playerAttack(self):
-        # TODO: Function for initiating an attack
-        choice = input("What will you do?")
-    
-    def battlePhase(self):
+    def battlePhase(self, players):
         while self.battleState:
             if all(x == None for x in self.enemyField.values()): # If all enemies are killed
                 print("Battle won! Returning to exploration board...")
@@ -80,8 +86,16 @@ class Battlefield:
             else:
                 self.enemyAttack()
                 self.battleState = False
-                #self.playerAttack()
-
+                #Player.attack(self)
+                self.turn += 1
+    
+    def killEnemy(self, zone): # Kill specified enemy
+        if self.enemyField[zone] is not None:
+            print(f"Killed {self.enemyField[zone].name} in Zone {zone}.")
+            self.enemyField[zone] = None
+        else:
+            print(f"No enemy to kill in Zone {zone}.")
+    
     def getOccupiedPlayerZones(self):
         return list({x for x in self.friendlyField if self.friendlyField[x]})
          

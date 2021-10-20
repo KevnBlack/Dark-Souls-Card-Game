@@ -10,3 +10,6 @@ class Encounter:
         
     def __str__(self): # String representation of encounter
         return (f'{self.name}')
+    
+    def __repr__(self): # String representation of encounter
+        return (f'{self.name}')

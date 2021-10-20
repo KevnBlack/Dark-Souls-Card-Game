@@ -1,0 +1,282 @@
+{
+	"0":{
+		"Assassin":"Assassin Armour",
+		"Cleric":"Cleric Robes",
+		"Herald":"Herald Armour",
+		"Knight":"Knight Armour",
+		"Pyromancer":"Pyromancer Garb",
+		"Sorcerer":"Sorcerer Robes",
+		"Thief":"Deserter Armour",
+		"Warrior":"Northern Armour"
+		},
+	"1":{
+		"Assassin":"Assassin Armour",
+		"Cleric":"Cleric Robes",
+		"Herald":"Herald Armour",
+		"Knight":"Knight Armour",
+		"Pyromancer":"Pyromancer Garb",
+		"Sorcerer":"Sorcerer Robes",
+		"Thief":"Deserter Armour",
+		"Warrior":"Northern Armour"
+		},
+	"2":{
+		"Assassin":"Target Shield",
+		"Cleric":"Blue Wooden Shield",
+		"Herald":"Kite Shield",
+		"Knight":"Knight Armour",
+		"Pyromancer":"Caduceus Round Shield",
+		"Sorcerer":"Leather Shield",
+		"Thief":"Bandit Round Shield",
+		"Warrior":"Round Shield"
+		},
+	"3":{
+		"Assassin":"Target Shield",
+		"Cleric":"Blue Wooden Shield",
+		"Herald":"Kite Shield",
+		"Knight":"Knight Shield",
+		"Pyromancer":"Caduceus Round Shield",
+		"Sorcerer":"Leather Shield",
+		"Thief":"Bandit Round Shield",
+		"Warrior":"Round Shield"
+		},
+	"4":{
+		"Assassin":"Kukris",
+		"Cleric":"Consecrated Mace",
+		"Herald":"Talisman",
+		"Knight":"Knight Shield",
+		"Pyromancer":"Hand Axe",
+		"Sorcerer":"Mail Breaker",
+		"Thief":"Bandit Knife",
+		"Warrior":"Brigand Axe"
+		},
+	"5":{
+		"Assassin":"Kukris",
+		"Cleric":"Consecrated Mace",
+		"Herald":"Talisman",
+		"Knight":"Shortsword",
+		"Pyromancer":"Hand Axe",
+		"Sorcerer":"Mail Breaker",
+		"Thief":"Bandit Knife",
+		"Warrior":"Brigand Axe"
+		},
+	"6":{
+		"Assassin":"Estoc",
+		"Cleric":"Sacred Chime",
+		"Herald":"Spear",
+		"Knight":"Shortsword",
+		"Pyromancer":"Pyromancy Flame",
+		"Sorcerer":"Soul Arrow",
+		"Thief":"Shortbow",
+		"Warrior":"Battle Axe"
+		},
+	"7":{
+		"Assassin":"Estoc",
+		"Cleric":"Sacred Chime",
+		"Herald":"Spear",
+		"Knight":"Long Sword",
+		"Pyromancer":"Pyromancy Flame",
+		"Sorcerer":"Soul Arrow",
+		"Thief":"Shortbow",
+		"Warrior":"Battle Axe"
+		},
+	"8":{
+		"Assassin":"Estoc",
+		"Cleric":"Sacred Chime",
+		"Herald":"Spear",
+		"Knight":"Long Sword",
+		"Pyromancer":"Pyromancy Flame",
+		"Sorcerer":"Soul Arrow",
+		"Thief":"Shortbow",
+		"Warrior":"Battle Axe"
+		},
+	"9":{
+		"Assassin":"Intelligence",
+		"Cleric":"Intelligence",
+		"Herald":"Strength",
+		"Knight":"Faith",
+		"Pyromancer":"Strength",
+		"Sorcerer":"Dexterity",
+		"Thief":"Intelligence",
+		"Warrior":"Intelligence"
+		},
+	"10":{
+		"Assassin":"Intelligence",
+		"Cleric":"Intelligence",
+		"Herald":"Strength",
+		"Knight":"Faith",
+		"Pyromancer":"Strength",
+		"Sorcerer":"Dexterity",
+		"Thief":"Intelligence",
+		"Warrior":"Intelligence"
+		},
+	"11":{
+		"Assassin":"Intelligence",
+		"Cleric":"Intelligence",
+		"Herald":"Strength",
+		"Knight":"Faith",
+		"Pyromancer":"Strength",
+		"Sorcerer":"Dexterity",
+		"Thief":"Intelligence",
+		"Warrior":"Intelligence"
+		},
+	"12":{
+		"Assassin":"Intelligence",
+		"Cleric":"Intelligence",
+		"Herald":"Strength",
+		"Knight":"Faith",
+		"Pyromancer":"Strength",
+		"Sorcerer":"Dexterity",
+		"Thief":"Intelligence",
+		"Warrior":"Intelligence"
+		},
+	"13":{
+		"Assassin":"Strength",
+		"Cleric":"Dexterity",
+		"Herald":"Intelligence",
+		"Knight":"Dexterity",
+		"Pyromancer":"Faith",
+		"Sorcerer":"Faith",
+		"Thief":"Strength",
+		"Warrior":"Dexterity"
+		},
+	"14":{
+		"Assassin":"Strength",
+		"Cleric":"Dexterity",
+		"Herald":"Intelligence",
+		"Knight":"Dexterity",
+		"Pyromancer":"Faith",
+		"Sorcerer":"Faith",
+		"Thief":"Strength",
+		"Warrior":"Dexterity"
+		},
+	"15":{
+		"Assassin":"Strength",
+		"Cleric":"Dexterity",
+		"Herald":"Intelligence",
+		"Knight":"Dexterity",
+		"Pyromancer":"Faith",
+		"Sorcerer":"Faith",
+		"Thief":"Strength",
+		"Warrior":"Dexterity"
+		},
+	"16":{
+		"Assassin":"Strength",
+		"Cleric":"Dexterity",
+		"Herald":"Intelligence",
+		"Knight":"Dexterity",
+		"Pyromancer":"Faith",
+		"Sorcerer":"Faith",
+		"Thief":"Strength",
+		"Warrior":"Dexterity"
+		},
+	"17":{
+		"Assassin":"Dexterity",
+		"Cleric":"Faith",
+		"Herald":"Faith",
+		"Knight":"Strength",
+		"Pyromancer":"Intelligence",
+		"Sorcerer":"Intelligence",
+		"Thief":"Dexterity",
+		"Warrior":"Dexterity"
+		},
+	"18":{
+		"Assassin":"Dexterity",
+		"Cleric":"Faith",
+		"Herald":"Faith",
+		"Knight":"Strength",
+		"Pyromancer":"Intelligence",
+		"Sorcerer":"Intelligence",
+		"Thief":"Dexterity",
+		"Warrior":"Dexterity"
+		},
+	"19":{
+		"Assassin":"Dexterity",
+		"Cleric":"Faith",
+		"Herald":"Faith",
+		"Knight":"Strength",
+		"Pyromancer":"Intelligence",
+		"Sorcerer":"Intelligence",
+		"Thief":"Dexterity",
+		"Warrior":"Strength"
+		},
+	"20":{
+		"Assassin":"Dexterity",
+		"Cleric":"Faith",
+		"Herald":"Faith",
+		"Knight":"Strength",
+		"Pyromancer":"Intelligence",
+		"Sorcerer":"Intelligence",
+		"Thief":"Dexterity",
+		"Warrior":"Strength"
+		},
+	"21":{
+		"Assassin":"Dexterity",
+		"Cleric":"Faith",
+		"Herald":"Faith",
+		"Knight":"Strength",
+		"Pyromancer":"Intelligence",
+		"Sorcerer":"Intelligence",
+		"Thief":"Dexterity",
+		"Warrior":"Strength"
+		},
+	"22":{
+		"Assassin":"Dexterity",
+		"Cleric":"Faith",
+		"Herald":"Faith",
+		"Knight":"Strength",
+		"Pyromancer":"Intelligence",
+		"Sorcerer":"Intelligence",
+		"Thief":"Dexterity",
+		"Warrior":"Strength"
+		},
+	"23":{
+		"Assassin":"Dexterity",
+		"Cleric":"Faith",
+		"Herald":"Faith",
+		"Knight":"Strength",
+		"Pyromancer":"Intelligence",
+		"Sorcerer":"Intelligence",
+		"Thief":"Dexterity",
+		"Warrior":"Strength"
+		},
+	"24":{
+		"Assassin":"Dexterity",
+		"Cleric":"Faith",
+		"Herald":"Faith",
+		"Knight":"Strength",
+		"Pyromancer":"Intelligence",
+		"Sorcerer":"Intelligence",
+		"Thief":"Dexterity",
+		"Warrior":"Strength"
+		},
+	"25":{
+		"Assassin":"Dexterity",
+		"Cleric":"Faith",
+		"Herald":"Faith",
+		"Knight":"Strength",
+		"Pyromancer":"Intelligence",
+		"Sorcerer":"Intelligence",
+		"Thief":"Dexterity",
+		"Warrior":"Strength"
+		},
+	"26":{
+		"Assassin":"Dexterity",
+		"Cleric":"Faith",
+		"Herald":"Faith",
+		"Knight":"Strength",
+		"Pyromancer":"Intelligence",
+		"Sorcerer":"Intelligence",
+		"Thief":"Dexterity",
+		"Warrior":"Strength"
+		},
+	"27":{
+		"Assassin":"Dexterity",
+		"Cleric":"Faith",
+		"Herald":"Faith",
+		"Knight":"Strength",
+		"Pyromancer":"Intelligence",
+		"Sorcerer":"Intelligence",
+		"Thief":"Dexterity",
+		"Warrior":"Strength"
+		}
+}

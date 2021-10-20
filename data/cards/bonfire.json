@@ -1,0 +1,39 @@
+{
+	"bonfire": [
+		{
+			"bonfireId": 0,
+			"name": "Blazing Bonfire",
+			"level": 1,
+			"deckMax": 28,
+			"fromSet": "Core"
+		},
+		{
+			"bonfireId": 1,
+			"name": "Crackling Fires",
+			"level": 2,
+			"deckMax": 31,
+			"fromSet": "Core"
+		},
+		{
+			"bonfireId": 2,
+			"name": "Glowing Logs",
+			"level": 3,
+			"deckMax": 34,
+			"fromSet": "Core"
+		},
+		{
+			"bonfireId": 3,
+			"name": "Dying Embers",
+			"level": 4,
+			"deckMax": 37,
+			"fromSet": "Core"
+		},
+		{
+			"bonfireId": 4,
+			"name": "Cooled Ashes",
+			"level": 5,
+			"deckMax": 40,
+			"fromSet": "Core"
+		}
+	]
+}

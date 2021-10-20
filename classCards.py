@@ -1,4 +1,4 @@
-class Card_Class:
+class ClassCards:
     def __init__(self, classId, name, taunt, ability, usedAbility, placement, fromSet):
         self.classId = classId
         self.name = name
