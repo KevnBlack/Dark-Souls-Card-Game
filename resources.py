@@ -2,7 +2,6 @@ import json
 from classCards import ClassCards
 from enemyCards import EnemyCards
 from encounter import Encounter
-from journey import Journey
 from bonfire import Bonfire
 from equipment import Equipment
 from stamina import Stamina
@@ -45,7 +44,7 @@ class Loading:
         for curr in self.playerData["players"]: # Load character classes
             character = ClassCards(curr["classId"], curr["name"], curr["taunt"], 
                                    curr["ability"], curr["usedAbility"], curr["placement"], 
-                                   curr["fromSet"])
+                                   curr["changedPos"], curr["fromSet"])
             self.playerDatabase[curr["name"]] = character
 
         for curr in self.enemiesData["enemies"]: # Load enemy cards
@@ -61,7 +60,7 @@ class Loading:
             self.equipmentDatabase[curr["name"]] = equipment
             
         for curr in self.staminaData["stamina"]:
-            stamina = Stamina(curr["staminaId"], curr["name"], curr["cost"], 
+            stamina = Stamina(curr["staminaId"], curr["name"], curr["cardType"], curr["cost"],
                                   curr["fromSet"], curr["choices"])
             self.staminaDatabase[curr["name"]] = stamina
         
@@ -71,7 +70,12 @@ class Loading:
                                     curr["encounter"])
             self.encounterDatabase[curr["name"]] = encounter
             
-        self.cards = {**self.staminaDatabase, **self.equipmentDatabase}
+        self.cards = {**self.staminaDatabase, **self.equipmentDatabase} # Combine stamina and equipment databases
+        # TODO: Eventually create normal and transposed databases
+        
+    def playerSetup(self, players):
+        for player in players:
+            player.playerClass = self.playerDatabase[player.playerClass]
             
     def sortEnemies(self):
         self.level1Enemies, self.level2Enemies, self.level3Enemies = [], [], []
@@ -82,4 +86,14 @@ class Loading:
                 self.level2Enemies.append(enemy)
             else:
                 self.level3Enemies.append(enemy) 
+                
+    def sortEncounters(self):
+        self.level1Encounters, self.level2Encounters, self.level3Encounters = [], [], []
+        for name,encounter in self.encounterDatabase.items(): # Sort encounters by level
+            if encounter.level == 1:
+                self.level1Encounters.append(encounter)
+            elif encounter.level == 2:
+                self.level2Encounters.append(encounter)
+            else:
+                self.level3Encounters.append(encounter)
         

@@ -3,6 +3,7 @@
 		{
 			"staminaId": 0,
 			"name": "Dexterity",
+			"cardType": "Stamina",
 			"cost": 0,
 			"fromSet": "Core",
 			"choices": [
@@ -11,6 +12,7 @@
 		{
 			"staminaId": 1,
 			"name": "Intelligence",
+			"cardType": "Stamina",
 			"cost": 0,
 			"fromSet": "Core",
 			"choices": [
@@ -19,6 +21,7 @@
 		{
 			"staminaId": 2,
 			"name": "Faith",
+			"cardType": "Stamina",
 			"cost": 0,
 			"fromSet": "Core",
 			"choices": [
@@ -27,6 +30,7 @@
 		{
 			"staminaId": 3,
 			"name": "Strength",
+			"cardType": "Stamina",
 			"cost": 0,
 			"fromSet": "Core",
 			"choices": [
@@ -35,6 +39,7 @@
 		{
 			"staminaId": 4,
 			"name": "Intelligence or Faith",
+			"cardType": "Stamina",
 			"cost": 2,
 			"fromSet": "Core",
 			"choices": [
@@ -44,6 +49,7 @@
 		{
 			"staminaId": 5,
 			"name": "Strength or Dexterity",
+			"cardType": "Stamina",
 			"cost": 2,
 			"fromSet": "Core",
 			"choices": [
@@ -53,6 +59,7 @@
 		{
 			"staminaId": 6,
 			"name": "Strength or Faith",
+			"cardType": "Stamina",
 			"cost": 2,
 			"fromSet": "Core",
 			"choices": [
@@ -62,6 +69,7 @@
 		{
 			"staminaId": 7,
 			"name": "Dexterity or Intelligence",
+			"cardType": "Stamina",
 			"cost": 2,
 			"fromSet": "Core",
 			"choices": [
@@ -71,6 +79,7 @@
 		{
 			"staminaId": 8,
 			"name": "Intelligence and Faith",
+			"cardType": "Stamina",
 			"cost": 5,
 			"fromSet": "Core",
 			"choices": [
@@ -79,6 +88,7 @@
 		{
 			"staminaId": 9,
 			"name": "Strength and Dexterity",
+			"cardType": "Stamina",
 			"cost": 5,
 			"fromSet": "Core",
 			"choices": [
@@ -87,6 +97,7 @@
 		{
 			"staminaId": 10,
 			"name": "Strength and Faith",
+			"cardType": "Stamina",
 			"cost": 5,
 			"fromSet": "Core",
 			"choices": [
@@ -95,6 +106,7 @@
 		{
 			"staminaId": 11,
 			"name": "Dexterity and Intelligence",
+			"cardType": "Stamina",
 			"cost": 5,
 			"fromSet": "Core",
 			"choices": [

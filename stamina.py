@@ -1,7 +1,8 @@
 class Stamina:
-    def __init__(self, staminaId, name, cost, fromSet, choices):
+    def __init__(self, staminaId, name, cardType, cost, fromSet, choices):
         self.staminaId = staminaId
         self.name = name
+        self.cardType = cardType
         self.cost = cost
         self.fromSet = fromSet
         self.choices = choices

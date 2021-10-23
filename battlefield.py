@@ -1,9 +1,7 @@
 import random
-from player import Player
-from enemyCards import EnemyCards
 
 class Battlefield:
-    def __init__(self):
+    def __init__(self, players, resources):
         self.turn = 1
         self.battleState = True
         
@@ -12,23 +10,27 @@ class Battlefield:
 
         self.enemyField = {1:None, 2:None, 3:None, 
                            4:None, 5:None, 6:None}
+        
+        self.battlefieldName = ""
+        self.players = players
+        self.resources = resources
     
-    def generateEnemies(self, area, resources, players, choice):
+    def generateEnemies(self, area, choice):
         enemies = []
-        enemyCount = resources.encounterDatabase[str(area[choice])].encounter[len(players)-1]["enemies"]
-        for index,amount in enumerate(enemyCount): # Randomly select 3 enemies
+        enemyCount = self.resources.encounterDatabase[str(area[choice])].encounter[len(self.players)-1]["enemies"]
+        for index,amount in enumerate(enemyCount): # Randomly select enemies
             if index == 0:
-                enemies.extend(random.sample(resources.level1Enemies,amount))
+                enemies.extend(random.sample(self.resources.level1Enemies,amount))
             elif index == 1:
-                enemies.extend(random.sample(resources.level2Enemies,amount))
+                enemies.extend(random.sample(self.resources.level2Enemies,amount))
             else:
-                enemies.extend(random.sample(resources.level3Enemies,amount))
+                enemies.extend(random.sample(self.resources.level3Enemies,amount))
         return enemies
     
-    def placement(self, players, enemies):
+    def placement(self, enemies):
         self.openFriendlyZones = [1, 2, 3, 4, 5, 6]
         playerPlacement = random.randint(1,6) # Randomized for testing purposes, players will get to choose their placement
-        for player in players:
+        for player in self.players:
             if self.friendlyField[playerPlacement] is None:
                 self.friendlyField[playerPlacement] = player
                 self.openFriendlyZones.remove(playerPlacement)
@@ -46,8 +48,35 @@ class Battlefield:
                 altPlacement = random.choice(self.openEnemyZones)
                 self.enemyField[altPlacement] = enemy
                 self.openEnemyZones.remove(altPlacement)
-    
-    def enemyAttack(self):
+
+    def initialDraw(self):
+        """
+        Function for the first draw a player makes in an encounter.
+        If it is the first turn and a player draws all staminas, they
+        will mulligan one time in hopes of drawing an equipment.
+
+        Returns
+        -------
+        None.
+
+        """
+        for player in self.players:
+            stamCount = 0                               # Initialize for each player
+            player.draw()
+            if self.turn == 1:                          # If a hand contains all stamina on first turn, player will mulligan
+                for card in player.hand:
+                    if card.cardType == "Stamina":
+                        stamCount += 1
+                    elif card.cardType != "Stamina":    # Break out of loop if there is a non-stamina card
+                        break
+                if stamCount == 6:
+                    print(f"{player} performs a mulligan.")
+                    player.mulligan()
+                    
+    def changePos(self):
+        pass
+
+    def enemyAttack(self):        
         for zone,enemy in self.enemyField.items(): # Enemy attack order
             frontMax, backMax = self.getMaxTaunts() # Get taunts at beginning of each enemy activation
             if enemy is None: # Skip empty zones
@@ -55,38 +84,50 @@ class Battlefield:
             else:
                 for attackZone in enemy.attacks: # Cycle through attack zones per enemy
                     if len(enemy.attacks) == 1: # For single attacks
+                        maxFrontPlayer = self.friendlyField[frontMax]
+                        maxBackPlayer = self.friendlyField[backMax]
+                        directHit = self.friendlyField[attackZone]
                         if self.friendlyField[attackZone] is None and attackZone in [1,2,3]: # If attack zone in player board is empty and in front row
                             if self.friendlyField[1] is None and self.friendlyField[2] is None and self.friendlyField[3] is None:
-                                print(f'{enemy} attacks {self.friendlyField[backMax]}!') # Aim for highest taunt in back row if front is empty
+                                print(f'{enemy} attacks {maxBackPlayer} for {enemy.power}.\n') # Aim for highest taunt in back row if front is empty
+                                maxBackPlayer.response(enemy)
                             else:
-                                print(f'{enemy} attacks {self.friendlyField[frontMax]}!') # Initially aim for highest taunt player in front row
+                                print(f'{enemy} attacks {maxFrontPlayer} for {enemy.power}.\n') # Initially aim for highest taunt player in front row
+                                maxFrontPlayer.response(enemy)
+                        
                         elif self.friendlyField[attackZone] is None and attackZone in [4,5,6]: # If attack zone in player board is empty and in back row
                             if self.friendlyField[4] is None and self.friendlyField[5] is None and self.friendlyField[6] is None:
-                                print(f'{enemy} attacks {self.friendlyField[frontMax]}!') # Aim for highest taunt in front row if back is empty
+                                print(f'{enemy} attacks {maxFrontPlayer} for {enemy.power}.\n') # Aim for highest taunt in front row if back is empty
+                                maxFrontPlayer.response(enemy)
                             else:
-                                print(f'{enemy} attacks {self.friendlyField[backMax]}!')  # Initially aim for highest taunt player in back row
+                                print(f'{enemy} attacks {maxBackPlayer} for {enemy.power}.\n')  # Initially aim for highest taunt player in back row
+                                maxBackPlayer.response(enemy)
                         else:
-                            print(f'{enemy} attacks {self.friendlyField[attackZone]}!') # Enemy lands hit
-                    
+                            print(f'{enemy} attacks {directHit} for {enemy.power}.\n') # Enemy lands hit
+                            directHit.response(enemy)
+                        
                     elif len(enemy.attacks) > 1: # For AOE attacks
                         occupiedPlayerZones = self.getOccupiedPlayerZones()
                         if len(set.intersection(set(enemy.attacks),set(occupiedPlayerZones))) == 0: # If the enemy attack zones aim at no players
-                            print(f'{enemy} missed completely!')
+                            print(f'{enemy} missed completely!\n')
                             break # Missed, so move on to next enemy if any
                         elif self.friendlyField[attackZone] is None: # Skip empty zones
                             continue
                         else:
-                            print(f'{enemy} attacks {self.friendlyField[attackZone]}!') # Enemy lands hit
+                            currPlayer = self.friendlyField[attackZone]
+                            print(f'{enemy} performs an AOE attack and attacks {currPlayer} for {enemy.power}.\n') # Enemy lands hit
+                            currPlayer.response(enemy)
     
-    def battlePhase(self, players):
+    def battlePhase(self):
+        self.initialDraw()
         while self.battleState:
             if all(x == None for x in self.enemyField.values()): # If all enemies are killed
                 print("Battle won! Returning to exploration board...")
                 self.battleState = False
             else:
                 self.enemyAttack()
+                #self.player.attack()
                 self.battleState = False
-                #Player.attack(self)
                 self.turn += 1
     
     def killEnemy(self, zone): # Kill specified enemy
@@ -99,17 +140,20 @@ class Battlefield:
     def getOccupiedPlayerZones(self):
         return list({x for x in self.friendlyField if self.friendlyField[x]})
          
+    def setEncounterName(self, encounter):
+        self.battlefieldName = f"{encounter.name} ({encounter.level})"
+    
     def getMaxTaunts(self):
         self.frontTaunts = {1:0, 2:0, 3:0}
         self.backTaunts = {4:0, 5:0, 6:0}
         
-        for player in self.friendlyField:
-            if self.friendlyField[player] is None:
+        for zone in self.friendlyField:
+            if self.friendlyField[zone] is None:
                 continue
-            elif player in [1,2,3]:
-                self.frontTaunts[player] = self.friendlyField[player].taunt
+            elif zone in [1,2,3]:
+                self.frontTaunts[zone] = self.friendlyField[zone].playerClass.taunt
             else:
-                self.backTaunts[player] = self.friendlyField[player].taunt
+                self.backTaunts[zone] = self.friendlyField[zone].playerClass.taunt
 
         frontMaxTaunt =  max(self.frontTaunts, key=self.frontTaunts.get)
         backMaxTaunt = max(self.backTaunts, key=self.backTaunts.get)
@@ -127,7 +171,7 @@ class Battlefield:
                 f'|| {str(self.friendlyField[3]): ^30} || {str(self.friendlyField[2]): ^30} || {str(self.friendlyField[1]): ^30} ||\n'
                 f'|| {"(Zone 3)": ^30} || {"(Zone 2)": ^30} || {"(Zone 1)": ^30} ||\n'
                 f'========================================================================================================\n'
-                f'\n\n'
+                f'\n {self.battlefieldName: ^98} \n\n'
                 f'========================================================================================================\n'
                 f'|| {"": ^30} || {"": ^30} || {"": ^30} ||\n'
                 f'|| {str(self.enemyField[1]): ^30} || {str(self.enemyField[2]): ^30} || {str(self.enemyField[3]): ^30} ||\n'

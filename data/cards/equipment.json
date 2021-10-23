@@ -8,7 +8,7 @@
 			"fromSet": "Core",
 			"choices": [
 				{"option": "reuse", "ability": ["block"], "value": 2, "cost": ["Intelligence"]},
-				{"option": "discard", "ability": ["dodge"], "value": null, "cost": ["Intelligence"]}]
+				{"option": "discard", "ability": ["dodge"], "value": 0, "cost": ["Intelligence"]}]
 		},
 		{
 			"equipmentId": 1,
@@ -18,7 +18,7 @@
 			"fromSet": "Core",
 			"choices": [
 				{"option": "reuse", "ability": ["block"], "value": 2, "cost": ["Any"]},
-				{"option": "discard", "ability": ["dodge"], "value": null, "cost": ["Dexterity"]}]
+				{"option": "discard", "ability": ["dodge"], "value": 0, "cost": ["Dexterity"]}]
 		},
 		{
 			"equipmentId": 2,
@@ -28,7 +28,7 @@
 			"fromSet": "Core",
 			"choices": [
 				{"option": "reuse", "ability": ["attack"], "value": 2, "cost": ["Dexterity", "Intelligence"]},
-				{"option": "discard", "ability": ["ranged", "bleed"], "value": null, "cost": null}]
+				{"option": "discard", "ability": ["ranged", "bleed"], "value": 0, "cost": []}]
 		},
 		{
 			"equipmentId": 3,
@@ -40,6 +40,47 @@
 				{"option": "reuse", "ability": ["attack"], "value": 2, "cost": ["Strength", "Any", "Dexterity"]},
 				{"option": "discard 1", "ability": ["attack"], "value": 2, "cost": ["Dexterity"]},
 				{"option": "discard 2", "ability": ["attack"], "value": 3, "cost": ["Strength", "Any", "Dexterity", "Any"]}]
+		},
+		{
+			"equipmentId": 4,
+			"name": "Knight Shield",
+			"cardType": "Knight",
+			"weakness": "Heavy",
+			"fromSet": "Core",
+			"choices": [
+				{"option": "reuse", "ability": ["attack"], "value": 1, "cost": ["Strength", "Any"]},
+				{"option": "discard", "ability": ["block"], "value": 3, "cost": []}]
+		},
+		{
+			"equipmentId": 5,
+			"name": "Long Sword",
+			"cardType": "Knight",
+			"weakness": "Heavy",
+			"fromSet": "Core",
+			"choices": [
+				{"option": "reuse", "ability": ["attack"], "value": 2, "cost": ["Strength", "Any", "Faith"]},
+				{"option": "discard 1", "ability": ["attack"], "value": 2, "cost": ["Strength"]},
+				{"option": "discard 2", "ability": ["attack"], "value": 3, "cost": ["Strength", "Any", "Strength", "Any"]}]
+		},
+		{
+			"equipmentId": 6,
+			"name": "Knight Armour",
+			"cardType": "Knight",
+			"weakness": null,
+			"fromSet": "Core",
+			"choices": [
+				{"option": "reuse", "ability": ["block"], "value": 3, "cost": ["Strength"]},
+				{"option": "discard", "ability": ["block"], "value": 4, "cost": ["Strength"]}]
+		},
+		{
+			"equipmentId": 7,
+			"name": "Shortsword",
+			"cardType": "Knight",
+			"weakness": "Skilled",
+			"fromSet": "Core",
+			"choices": [
+				{"option": "reuse", "ability": ["attack"], "value": 1, "cost": ["Strength", "Dexterity"]},
+				{"option": "discard", "ability": ["attack"], "value": 2, "cost": ["Strength"]}]
 		}
 	]
 }

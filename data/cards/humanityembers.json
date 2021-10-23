@@ -1,0 +1,20 @@
+{
+	"humanityembers": [
+		{
+			"humembId": 0,
+			"name": "Remnant of Humanity",
+			"cardType": "Humanity",
+			"fromSet": "Core",
+			"choices": [
+				{"option": "discard", "ability": ["draw"], "value": 1, "cost": null}]
+		},
+		{
+			"humembId": 1,
+			"name": "Ember",
+			"cardType": "Ember",
+			"fromSet": "Seekers of Humanity",
+			"choices": [
+				{"option": "discard", "ability": ["draw"], "value": 1, "cost": null}]
+		}
+	]
+}

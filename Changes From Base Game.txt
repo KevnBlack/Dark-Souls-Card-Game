@@ -1,0 +1,7 @@
+ - Taking Damage  -
+1a. Card Game: Player can discard either from their hand or the top of their deck.
+1b. Computer Game: All damage taken is removed from the top of the player deck.
+
+- Enemy Placement -
+1a. Card Game: If an enemy zone is already occupied when trying to place another enemy in that zone, they instead will be placed in the adjacent zone to the left or right in the same row. If that row is filled, place the enemy anywhere else on the battlefield. 
+1b. Computer Game: If an enemy zone is already occupied when trying to place another enemy in that zone, choose a random unoccupied zone on the battlefield and place them there instead.
