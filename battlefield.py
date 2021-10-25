@@ -2,7 +2,8 @@ import random
 
 class Battlefield:
     def __init__(self, players, resources):
-        self.turn = 1
+        self.turnNum = 1
+        self.turn = "Turn " + str(self.turnNum)
         self.battleState = True
         
         self.friendlyField = {1:None, 2:None, 3:None, 
@@ -11,7 +12,6 @@ class Battlefield:
         self.enemyField = {1:None, 2:None, 3:None, 
                            4:None, 5:None, 6:None}
         
-        self.battlefieldName = ""
         self.players = players
         self.resources = resources
     
@@ -75,8 +75,8 @@ class Battlefield:
                     
     def changePos(self):
         pass
-
-    def enemyAttack(self):        
+    
+    def enemyActivation(self):
         for zone,enemy in self.enemyField.items(): # Enemy attack order
             frontMax, backMax = self.getMaxTaunts() # Get taunts at beginning of each enemy activation
             if enemy is None: # Skip empty zones
@@ -118,17 +118,26 @@ class Battlefield:
                             print(f'{enemy} performs an AOE attack and attacks {currPlayer} for {enemy.power}.\n') # Enemy lands hit
                             currPlayer.response(enemy)
     
-    def battlePhase(self):
+    def playerActivation(self):
+        for zone, player in self.friendlyField.items(): # Player attack order
+            if player is None: # Skip empty zones
+                continue
+            else:
+                player.attack()
+    
+    def battlePhase(self, battlefield):
         self.initialDraw()
         while self.battleState:
             if all(x == None for x in self.enemyField.values()): # If all enemies are killed
                 print("Battle won! Returning to exploration board...")
                 self.battleState = False
             else:
-                self.enemyAttack()
-                #self.player.attack()
-                self.battleState = False
-                self.turn += 1
+                print(battlefield)
+                self.enemyActivation()
+                print(battlefield)
+                self.playerActivation()
+                self.turnNum += 1
+                self.turn = "Turn " + str(self.turnNum)
     
     def killEnemy(self, zone): # Kill specified enemy
         if self.enemyField[zone] is not None:
@@ -139,9 +148,6 @@ class Battlefield:
     
     def getOccupiedPlayerZones(self):
         return list({x for x in self.friendlyField if self.friendlyField[x]})
-         
-    def setEncounterName(self, encounter):
-        self.battlefieldName = f"{encounter.name} ({encounter.level})"
     
     def getMaxTaunts(self):
         self.frontTaunts = {1:0, 2:0, 3:0}
@@ -160,26 +166,26 @@ class Battlefield:
         return frontMaxTaunt, backMaxTaunt
 
     def __str__(self): # String representation of battlefield
-        return (f'========================================================================================================\n'
-                f'|| {"PLAYER BOARD": ^98} ||\n'
-                f'========================================================================================================\n'
-                f'|| {"": ^30} || {"": ^30} || {"": ^30} ||\n'
-                f'|| {str(self.friendlyField[6]): ^30} || {str(self.friendlyField[5]): ^30} || {str(self.friendlyField[4]): ^30} ||\n'
-                f'|| {"(Zone 6)": ^30} || {"(Zone 5)": ^30} || {"(Zone 4)": ^30} ||\n'
-                f'========================================================================================================\n'
-                f'|| {"": ^30} || {"": ^30} || {"": ^30} ||\n'
-                f'|| {str(self.friendlyField[3]): ^30} || {str(self.friendlyField[2]): ^30} || {str(self.friendlyField[1]): ^30} ||\n'
-                f'|| {"(Zone 3)": ^30} || {"(Zone 2)": ^30} || {"(Zone 1)": ^30} ||\n'
-                f'========================================================================================================\n'
-                f'\n {self.battlefieldName: ^98} \n\n'
-                f'========================================================================================================\n'
-                f'|| {"": ^30} || {"": ^30} || {"": ^30} ||\n'
-                f'|| {str(self.enemyField[1]): ^30} || {str(self.enemyField[2]): ^30} || {str(self.enemyField[3]): ^30} ||\n'
-                f'|| {"(Zone 1)": ^30} || {"(Zone 2)": ^30} || {"(Zone 3)": ^30} ||\n'
-                f'========================================================================================================\n'
-                f'|| {"": ^30} || {"": ^30} || {"": ^30} ||\n'
-                f'|| {str(self.enemyField[4]): ^30} || {str(self.enemyField[5]): ^30} || {str(self.enemyField[6]): ^30} ||\n'
-                f'|| {"(Zone 4)": ^30} || {"(Zone 5)": ^30} || {"(Zone 6)": ^30} ||\n'
-                f'========================================================================================================\n'
-                f'|| {"ENEMY BOARD": ^98} ||\n'
-                f'========================================================================================================\n')
+        return (f'=======================================================================================================================\n'
+                f'|| {"PLAYER BOARD": ^113} ||\n'
+                f'=======================================================================================================================\n'
+                f'|| {"": ^35} || {"": ^35} || {"": ^35} ||\n'
+                f'|| {str(self.friendlyField[6]): ^35} || {str(self.friendlyField[5]): ^35} || {str(self.friendlyField[4]): ^35} ||\n'
+                f'|| {"(Zone 6)": ^35} || {"(Zone 5)": ^35} || {"(Zone 4)": ^35} ||\n'
+                f'=======================================================================================================================\n'
+                f'|| {"": ^35} || {"": ^35} || {"": ^35} ||\n'
+                f'|| {str(self.friendlyField[3]): ^35} || {str(self.friendlyField[2]): ^35} || {str(self.friendlyField[1]): ^35} ||\n'
+                f'|| {"(Zone 3)": ^35} || {"(Zone 2)": ^35} || {"(Zone 1)": ^35} ||\n'
+                f'=======================================================================================================================\n'
+                f'|| {self.turn: ^113} ||'
+                f'=======================================================================================================================\n'
+                f'|| {"": ^35} || {"": ^35} || {"": ^35} ||\n'
+                f'|| {str(self.enemyField[1]): ^35} || {str(self.enemyField[2]): ^35} || {str(self.enemyField[3]): ^35} ||\n'
+                f'|| {"(Zone 1)": ^35} || {"(Zone 2)": ^35} || {"(Zone 3)": ^35} ||\n'
+                f'=======================================================================================================================\n'
+                f'|| {"": ^35} || {"": ^35} || {"": ^35} ||\n'
+                f'|| {str(self.enemyField[4]): ^35} || {str(self.enemyField[5]): ^35} || {str(self.enemyField[6]): ^35} ||\n'
+                f'|| {"(Zone 4)": ^35} || {"(Zone 5)": ^35} || {"(Zone 6)": ^35} ||\n'
+                f'=======================================================================================================================\n'
+                f'|| {"ENEMY BOARD": ^113} ||\n'
+                f'=======================================================================================================================\n')

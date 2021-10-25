@@ -5,3 +5,7 @@
 - Enemy Placement -
 1a. Card Game: If an enemy zone is already occupied when trying to place another enemy in that zone, they instead will be placed in the adjacent zone to the left or right in the same row. If that row is filled, place the enemy anywhere else on the battlefield. 
 1b. Computer Game: If an enemy zone is already occupied when trying to place another enemy in that zone, choose a random unoccupied zone on the battlefield and place them there instead.
+
+- Using Stamina  -
+1a. Card Game: When the user has to use stamina for blocking or using equipment when "Any" is a requirement, they can choose what stamina they want to spend in their hand.
+1b. Computer Game: Instead of the player getting to choose what stamina they want to use for an "Any" stamina, a stamina is randomly chosen.

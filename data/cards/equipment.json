@@ -7,8 +7,8 @@
 			"weakness": null,
 			"fromSet": "Core",
 			"choices": [
-				{"option": "reuse", "ability": ["block"], "value": 2, "cost": ["Intelligence"]},
-				{"option": "discard", "ability": ["dodge"], "value": 0, "cost": ["Intelligence"]}]
+				{"option": 1, "action": "Reuse", "ability": {"block": 2}, "cost": ["Intelligence"]},
+				{"option": 2, "action": "Discard", "ability": {"dodge": 0}, "cost": ["Intelligence"]}]
 		},
 		{
 			"equipmentId": 1,
@@ -17,8 +17,8 @@
 			"weakness": null,
 			"fromSet": "Core",
 			"choices": [
-				{"option": "reuse", "ability": ["block"], "value": 2, "cost": ["Any"]},
-				{"option": "discard", "ability": ["dodge"], "value": 0, "cost": ["Dexterity"]}]
+				{"option": 1, "action": "Reuse", "ability": {"block": 2}, "cost": ["Any"]},
+				{"option": 2, "action": "Discard", "ability": {"dodge": 0}, "cost": ["Dexterity"]}]
 		},
 		{
 			"equipmentId": 2,
@@ -27,8 +27,8 @@
 			"weakness": "Skilled",
 			"fromSet": "Core",
 			"choices": [
-				{"option": "reuse", "ability": ["attack"], "value": 2, "cost": ["Dexterity", "Intelligence"]},
-				{"option": "discard", "ability": ["ranged", "bleed"], "value": 0, "cost": []}]
+				{"option": 1, "action": "Reuse", "ability": {"attack": 2}, "cost": ["Dexterity", "Intelligence"]},
+				{"option": 2, "action": "Discard", "ability": {"ranged": 0, "bleed": 0}, "cost": []}]
 		},
 		{
 			"equipmentId": 3,
@@ -37,9 +37,9 @@
 			"weakness": "Precise",
 			"fromSet": "Core",
 			"choices": [
-				{"option": "reuse", "ability": ["attack"], "value": 2, "cost": ["Strength", "Any", "Dexterity"]},
-				{"option": "discard 1", "ability": ["attack"], "value": 2, "cost": ["Dexterity"]},
-				{"option": "discard 2", "ability": ["attack"], "value": 3, "cost": ["Strength", "Any", "Dexterity", "Any"]}]
+				{"option": 1, "action": "Reuse", "ability": {"attack": 2}, "cost": ["Strength", "Any", "Dexterity"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2}, "cost": ["Dexterity"]},
+				{"option": 3, "action": "Discard", "ability": {"attack": 3}, "cost": ["Strength", "Any", "Dexterity", "Any"]}]
 		},
 		{
 			"equipmentId": 4,
@@ -48,8 +48,8 @@
 			"weakness": "Heavy",
 			"fromSet": "Core",
 			"choices": [
-				{"option": "reuse", "ability": ["attack"], "value": 1, "cost": ["Strength", "Any"]},
-				{"option": "discard", "ability": ["block"], "value": 3, "cost": []}]
+				{"option": 1, "action": "Reuse", "ability": {"attack": 1}, "cost": ["Strength", "Any"]},
+				{"option": 2, "action": "Discard", "ability": {"block": 3}, "cost": []}]
 		},
 		{
 			"equipmentId": 5,
@@ -58,9 +58,9 @@
 			"weakness": "Heavy",
 			"fromSet": "Core",
 			"choices": [
-				{"option": "reuse", "ability": ["attack"], "value": 2, "cost": ["Strength", "Any", "Faith"]},
-				{"option": "discard 1", "ability": ["attack"], "value": 2, "cost": ["Strength"]},
-				{"option": "discard 2", "ability": ["attack"], "value": 3, "cost": ["Strength", "Any", "Strength", "Any"]}]
+				{"option": 1, "action": "Reuse", "ability": {"attack": 2}, "cost": ["Strength", "Any", "Faith"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2}, "cost": ["Strength"]},
+				{"option": 3, "action": "Discard", "ability": {"attack": 3}, "cost": ["Strength", "Any", "Strength", "Any"]}]
 		},
 		{
 			"equipmentId": 6,
@@ -69,8 +69,8 @@
 			"weakness": null,
 			"fromSet": "Core",
 			"choices": [
-				{"option": "reuse", "ability": ["block"], "value": 3, "cost": ["Strength"]},
-				{"option": "discard", "ability": ["block"], "value": 4, "cost": ["Strength"]}]
+				{"option": 1, "action": "Reuse", "ability": {"block": 3}, "cost": ["Strength"]},
+				{"option": 2, "action": "Discard", "ability": {"block": 4}, "cost": ["Strength"]}]
 		},
 		{
 			"equipmentId": 7,
@@ -79,8 +79,254 @@
 			"weakness": "Skilled",
 			"fromSet": "Core",
 			"choices": [
-				{"option": "reuse", "ability": ["attack"], "value": 1, "cost": ["Strength", "Dexterity"]},
-				{"option": "discard", "ability": ["attack"], "value": 2, "cost": ["Strength"]}]
+				{"option": 1, "action": "Reuse", "ability": {"attack": 1}, "cost": ["Strength", "Dexterity"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2}, "cost": ["Strength"]}]
+		},
+		{
+			"equipmentId": 8,
+			"name": "Leather Shield",
+			"cardType": "Sorcerer",
+			"weakness": null,
+			"fromSet": "Core",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"block": 2}, "cost": ["Any"]},
+				{"option": 2, "action": "Discard", "ability": {"block": 3}, "cost": ["Any"]}]
+		},
+		{
+			"equipmentId": 9,
+			"name": "Mail Breaker",
+			"cardType": "Sorcerer",
+			"weakness": "Precise",
+			"fromSet": "Core",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"attack": 1}, "cost": ["Dexterity", "Intelligence"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2}, "cost": ["Dexterity"]}]
+		},
+		{
+			"equipmentId": 10,
+			"name": "Sorcerer Robes",
+			"cardType": "Sorcerer",
+			"weakness": null,
+			"fromSet": "Core",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"block": 2}, "cost": ["Intelligence"]},
+				{"option": 2, "action": "Discard", "ability": {"dodge": 0}, "cost": ["Dexterity"]}]
+		},
+		{
+			"equipmentId": 11,
+			"name": "Soul Arrow",
+			"cardType": "Sorcerer",
+			"weakness": "Magical",
+			"fromSet": "Core",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"attack": 1, "ranged": 0}, "cost": ["Intelligence", "Faith"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2, "ranged": 0}, "cost": ["Intelligence", "Any"]},
+				{"option": 3, "action": "Discard", "ability": {"attack": 3, "ranged": 0}, "cost": ["Intelligence", "Any", "Intelligence", "Any"]}]
+		},
+		{
+			"equipmentId": 12,
+			"name": "Shortbow",
+			"cardType": "Thief",
+			"weakness": "Skilled",
+			"fromSet": "Forgotten Paths",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"attack": 1, "ranged": 0}, "cost": ["Strength", "Dexterity"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2, "ranged": 0}, "cost": ["Dexterity", "Any"]},
+				{"option": 3, "action": "Discard", "ability": {"attack": 3, "ranged": 0}, "cost": ["Strength", "Dexterity", "Any", "Dexterity"]}]
+		},
+		{
+			"equipmentId": 13,
+			"name": "Bandit Knife",
+			"cardType": "Thief",
+			"weakness": "Precise",
+			"fromSet": "Forgotten Paths",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"attack": 2}, "cost": ["Dexterity", "Any", "Intelligence"]},
+				{"option": 2, "action": "Discard", "ability": {"poison": 0}, "cost": ["Intelligence"]}]
+		},
+		{
+			"equipmentId": 14,
+			"name": "Deserter Armour",
+			"cardType": "Thief",
+			"weakness": null,
+			"fromSet": "Forgotten Paths",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"block": 3}, "cost": ["Strength", "Dexterity"]},
+				{"option": 2, "action": "Discard", "ability": {"block": 3, "search": 1}, "cost": ["Dexterity"]}]
+		},
+		{
+			"equipmentId": 15,
+			"name": "Bandit Round Shield",
+			"cardType": "Thief",
+			"weakness": null,
+			"fromSet": "Forgotten Paths",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"dodge": 0}, "cost": ["Dexterity", "Dexterity"]},
+				{"option": 2, "action": "Discard", "ability": {"dodge": 0, "search": 1}, "cost": ["Intelligence", "Any"]}]
+		},
+		{
+			"equipmentId": 16,
+			"name": "Consecrated Mace",
+			"cardType": "Cleric",
+			"weakness": "Precise",
+			"fromSet": "Seekers of Humanity",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"attack": 2}, "cost": ["Dexterity", "Any", "Faith"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2}, "cost": ["Dexterity"]},
+				{"option": 3, "action": "Discard", "ability": {"attack": 3}, "cost": ["Dexterity", "Faith", "Faith", "Any"]}]
+		},
+		{
+			"equipmentId": 17,
+			"name": "Sacred Chime",
+			"cardType": "Cleric",
+			"weakness": null,
+			"fromSet": "Seekers of Humanity",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"atkup": 1}, "cost": ["Intelligence"]},
+				{"option": 2, "action": "Discard", "ability": {"heal": 3}, "cost": []}]
+		},
+		{
+			"equipmentId": 18,
+			"name": "Cleric Robes",
+			"cardType": "Cleric",
+			"weakness": null,
+			"fromSet": "Seekers of Humanity",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"block": 3}, "cost": ["Faith"]},
+				{"option": 2, "action": "Discard", "ability": {"dodge": 0}, "cost": ["Intelligence", "Faith"]}]
+		},
+		{
+			"equipmentId": 19,
+			"name": "Blue Wooden Shield",
+			"cardType": "Cleric",
+			"weakness": "Magical",
+			"fromSet": "Seekers of Humanity",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"attack": 2}, "cost": ["Intelligence", "Any", "Faith"]},
+				{"option": 2, "action": "Discard", "ability": {"block": 3}, "cost": []}]
+		},
+		{
+			"equipmentId": 20,
+			"name": "Northern Armour",
+			"cardType": "Warrior",
+			"weakness": null,
+			"fromSet": "Seekers of Humanity",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"block": 3}, "cost": ["Strength", "Dexterity"]},
+				{"option": 2, "action": "Discard", "ability": {"block": 3}, "cost": []}]
+		},
+		{
+			"equipmentId": 21,
+			"name": "Battle Axe",
+			"cardType": "Warrior",
+			"weakness": "Skilled",
+			"fromSet": "Seekers of Humanity",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"attack": 2}, "cost": ["Strength", "Any", "Dexterity"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 1}, "cost": ["Strength"]},
+				{"option": 3, "action": "Discard", "ability": {"attack": 3}, "cost": ["Strength", "Dexterity", "Strength"]}]
+		},
+		{
+			"equipmentId": 22,
+			"name": "Brigand Axe",
+			"cardType": "Warrior",
+			"weakness": "Heavy",
+			"fromSet": "Seekers of Humanity",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"attack": 1}, "cost": ["Intelligence"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2}, "cost": ["Intelligence"]}]
+		},
+		{
+			"equipmentId": 23,
+			"name": "Round Shield",
+			"cardType": "Warrior",
+			"weakness": "Skilled",
+			"fromSet": "Seekers of Humanity",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"block": 3}, "cost": ["Strength", "Dexterity"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 1, "push": "backward"}, "cost": ["Strength"]}]
+		},
+		{
+			"equipmentId": 24,
+			"name": "Talisman",
+			"cardType": "Herald",
+			"weakness": null,
+			"fromSet": "Core",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"block": 2}, "cost": ["Faith"]},
+				{"option": 2, "action": "Discard", "ability": {"heal": 5}, "cost": ["Any"]}]
+		},
+		{
+			"equipmentId": 25,
+			"name": "Herald Armour",
+			"cardType": "Herald",
+			"weakness": null,
+			"fromSet": "Core",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"block": 3}, "cost": ["Faith"]},
+				{"option": 2, "action": "Discard", "ability": {"block": 2}, "cost": []}]
+		},
+		{
+			"equipmentId": 26,
+			"name": "Kite Shield",
+			"cardType": "Herald",
+			"weakness": "Heavy",
+			"fromSet": "Core",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"block": 3}, "cost": ["Strength", "Faith"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2}, "cost": ["Faith"]}]
+		},
+		{
+			"equipmentId": 27,
+			"name": "Spear",
+			"cardType": "Herald",
+			"weakness": "Heavy",
+			"fromSet": "Core",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"attack": 2}, "cost": ["Strength", "Any", "Faith"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2}, "cost": ["Faith"]},
+				{"option": 3, "action": "Discard", "ability": {"attack": 3}, "cost": ["Strength", "Any", "Faith", "Any"]}]
+		},
+		{
+			"equipmentId": 28,
+			"name": "Pyromancy Flame",
+			"cardType": "Pyromancer",
+			"weakness": "Magical",
+			"fromSet": "Forgotten Paths",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"attack": 1, "ranged": 0, "AOE": "column"}, "cost": ["Intelligence", "Faith"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2, "ranged": 0, "AOE": "column"}, "cost": ["Intelligence", "Faith"]}]
+		},
+		{
+			"equipmentId": 29,
+			"name": "Pyromancer Garb",
+			"cardType": "Pyromancer",
+			"weakness": null,
+			"fromSet": "Forgotten Paths",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"block": 2}, "cost": ["Intelligence"]},
+				{"option": 2, "action": "Discard", "ability": {"block": 3}, "cost": ["Strength"]}]
+		},
+		{
+			"equipmentId": 30,
+			"name": "Caduceus Round Shield",
+			"cardType": "Pyromancer",
+			"weakness": null,
+			"fromSet": "Forgotten Paths",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"block": 2}, "cost": ["Intelligence"]},
+				{"option": 2, "action": "Discard", "ability": {"dodge": 0}, "cost": ["Intelligence", "Any"]}]
+		},
+		{
+			"equipmentId": 31,
+			"name": "Hand Axe",
+			"cardType": "Pyromancer",
+			"weakness": "Heavy",
+			"fromSet": "Forgotten Paths",
+			"choices": [
+				{"option": 1, "action": "Reuse", "ability": {"attack": 2}, "cost": ["Strength", "Intelligence"]},
+				{"option": 2, "action": "Discard", "ability": {"attack": 2}, "cost": ["Intelligence"]},
+				{"option": 3, "action": "Discard", "ability": {"attack": 3}, "cost": ["Strength", "Intelligence", "Any", "Intelligence"]}]
 		}
 	]
 }

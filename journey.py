@@ -115,7 +115,7 @@ class Journey:
                     return True
                 else:                                                       # Ignore paths that can't be taken
                     continue
-            areasToClear =  set(areasToClear).difference(self.clearedAreas) # Removes duplicates and cleared areas
+            areasToClear = set(areasToClear).difference(self.clearedAreas) # Removes duplicates and cleared areas
             areasToClear.remove(self.objLookup[choice])                     # Also remove choice as it isn't a preliminary area that needs to be cleared
 
             print(f"Cannot travel to {choice}: {self.objLookup[choice]}. Areas that can be cleared first: {areasToClear}")
@@ -142,10 +142,8 @@ class Journey:
         None.
         """
         enemies = self.battlefield.generateEnemies(self.objLookup, choice)   # Generate enemies
-        self.battlefield.placement(enemies)                                                  # Place classes and enemies
-        self.battlefield.setEncounterName(self.objLookup[choice])                                          # Set name for encounter
-        print(self.battlefield)
-        self.battlefield.battlePhase()                                                         # Enemies attack immediately after starting encounter
+        self.battlefield.placement(enemies)                                  # Place classes and enemies
+        self.battlefield.battlePhase(self.battlefield)                       # Enemies attack immediately after starting encounter
     
     
     def returnToBonfire(self):

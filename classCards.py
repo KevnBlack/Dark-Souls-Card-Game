@@ -1,10 +1,10 @@
 class ClassCards:
-    def __init__(self, classId, name, taunt, ability, usedAbility, placement, changedPos, fromSet):
+    def __init__(self, classId, name, taunt, ability, condition, placement, changedPos, fromSet):
         self.classId = classId
         self.name = name
         self.taunt = taunt
         self.ability = ability
-        self.usedAbility = usedAbility
+        self.condition = condition
         self.placement = placement
         self.changedPos = changedPos
         self.fromSet = fromSet

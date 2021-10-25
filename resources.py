@@ -43,7 +43,7 @@ class Loading:
         
         for curr in self.playerData["players"]: # Load character classes
             character = ClassCards(curr["classId"], curr["name"], curr["taunt"], 
-                                   curr["ability"], curr["usedAbility"], curr["placement"], 
+                                   curr["ability"], curr["condition"], curr["placement"], 
                                    curr["changedPos"], curr["fromSet"])
             self.playerDatabase[curr["name"]] = character
 
